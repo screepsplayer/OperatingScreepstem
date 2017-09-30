@@ -7,7 +7,6 @@ export const loop = function() {
 
     // Initialize memory. First step needed to aquire game status
     _memory.init();
-
     // Initialize the command line interface. Based on current status
     _cli.init();
 
@@ -15,6 +14,7 @@ export const loop = function() {
     _kernel.run();
     console.log(__REVISION__);
     // global.SysMemory = SysMemory;
+    console.log("pouet");
 
     /*SysMemory.initMonitorMemory();
      for (var name in Game.rooms) {
